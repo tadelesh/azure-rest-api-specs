@@ -2,7 +2,7 @@
 
 These settings apply only when `--go` is specified on the command line.
 
-``` yaml $(go)
+``` yaml $(go) && !$(track2)
 go:
   license-header: MICROSOFT_MIT_NO_VERSION
   namespace: netapp
@@ -11,7 +11,7 @@ go:
 
 ### Go multi-api
 
-``` yaml $(go) && $(multiapi)
+``` yaml $(go) && !$(track2) && $(multiapi)
 batch:
   - tag: package-netapp-2021-06-01
   - tag: package-netapp-2021-04-01
@@ -213,3 +213,12 @@ Please also specify `--go-sdk-folder=<path to the root directory of your azure-s
 ``` yaml $(tag) == 'package-2017-08-15' && $(go)
 output-folder: $(go-sdk-folder)/services/preview/$(namespace)/mgmt/2017-08-15/$(namespace)
 ```
+
+```yaml $(go) && $(track2)
+license-header: MICROSOFT_MIT_NO_VERSION
+module-name: sdk/netapp/armnetapp
+module: github.com/Azure/azure-sdk-for-go/$(module-name)
+output-folder: $(go-sdk-folder)/$(module-name)
+azure-arm: true
+```
+

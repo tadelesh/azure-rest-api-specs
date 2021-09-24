@@ -11,7 +11,7 @@ go:
 
 ### Go multi-api
 
-``` yaml $(go) && $(multiapi)
+``` yaml $(go) && !$(track2) && $(multiapi)
 batch:
   - tag: package-2019-10-01-preview
   - tag: package-2021-01-01
@@ -34,3 +34,12 @@ Please also specify `--go-sdks-folder=<path to the root directory of your azure-
 ```yaml $(tag) == 'package-2021-01-01' && $(go)
 output-folder: $(go-sdk-folder)/services/$(namespace)/mgmt/2021-01-01/$(namespace)
 ```
+
+```yaml $(go) && $(track2)
+license-header: MICROSOFT_MIT_NO_VERSION
+module-name: sdk/resourcemover/armresourcemover
+module: github.com/Azure/azure-sdk-for-go/$(module-name)
+output-folder: $(go-sdk-folder)/$(module-name)
+azure-arm: true
+```
+

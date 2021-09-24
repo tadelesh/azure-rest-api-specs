@@ -46,3 +46,12 @@ Please also specify `--go-sdks-folder=<path to the root directory of your azure-
 namespace: azurestackhci
 output-folder: $(go-sdk-folder)/services/preview/$(namespace)/mgmt/2020-03-01-preview/$(namespace)
 ```
+
+```yaml $(go) && $(track2)
+license-header: MICROSOFT_MIT_NO_VERSION
+module-name: sdk/azurestackhci/armazurestackhci
+module: github.com/Azure/azure-sdk-for-go/$(module-name)
+output-folder: $(go-sdk-folder)/$(module-name)
+azure-arm: true
+```
+

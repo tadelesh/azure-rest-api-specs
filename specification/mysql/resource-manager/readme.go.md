@@ -2,7 +2,7 @@
 
 These settings apply only when `--go` is specified on the command line.
 
-``` yaml $(go)
+``` yaml $(go) && !$(track2)
 go:
   license-header: MICROSOFT_MIT_NO_VERSION
   clear-output-folder: true
@@ -10,7 +10,7 @@ go:
 
 ### Go multi-api
 
-``` yaml $(go) && $(multiapi)
+``` yaml $(go) && !$(track2) && $(multiapi)
 batch:
   - tag: package-flexibleserver-2021-05-01
   - tag: package-flexibleserver-2021-05-01-preview
@@ -82,3 +82,13 @@ Please also specify `--go-sdk-folder=<path to the root directory of your azure-s
 namespace: mysql
 output-folder: $(go-sdk-folder)/services/$(namespace)/mgmt/2017-12-01/$(namespace)
 ```
+```yaml $(go) && $(track2)
+license-header: MICROSOFT_MIT_NO_VERSION
+module-name: sdk/mysql/armmysql
+module: github.com/Azure/azure-sdk-for-go/$(module-name)
+output-folder: $(go-sdk-folder)/$(module-name)
+azure-arm: true
+modelerfour:
+  lenient-model-deduplication: true
+```
+

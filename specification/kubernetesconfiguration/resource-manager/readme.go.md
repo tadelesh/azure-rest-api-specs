@@ -11,7 +11,7 @@ go:
 
 ### Go multi-api 
 
-``` yaml $(go) && $(multiapi) 
+``` yaml $(go) && !$(track2) && $(multiapi) 
 batch: 
   - tag: package-preview-2021-05
   - tag: package-2021-03
@@ -57,3 +57,12 @@ Please also specify `--go-sdks-folder=<path to the root directory of your azure-
 ```yaml $(tag) == 'package-2020-07-01-preview' && $(go)
 namespace: kubernetesconfiguration
 output-folder: $(go-sdk-folder)/services/preview/$(namespace)/mgmt/2020-07-01-preview/$(namespace)
+
+```yaml $(go) && $(track2)
+license-header: MICROSOFT_MIT_NO_VERSION
+module-name: sdk/kubernetesconfiguration/armkubernetesconfiguration
+module: github.com/Azure/azure-sdk-for-go/$(module-name)
+output-folder: $(go-sdk-folder)/$(module-name)
+azure-arm: true
+```
+

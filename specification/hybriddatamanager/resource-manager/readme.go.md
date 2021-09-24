@@ -34,3 +34,12 @@ Please also specify `--go-sdk-folder=<path to the root directory of your azure-s
 ```yaml $(tag) == 'package-2016-06' && $(go)
 output-folder: $(go-sdk-folder)/services/hybriddatamanager/mgmt/2016-06-01/$(namespace)
 ```
+
+```yaml $(go) && $(track2)
+license-header: MICROSOFT_MIT_NO_VERSION
+module-name: sdk/hybriddatamanager/armhybriddatamanager
+module: github.com/Azure/azure-sdk-for-go/$(module-name)
+output-folder: $(go-sdk-folder)/$(module-name)
+azure-arm: true
+```
+

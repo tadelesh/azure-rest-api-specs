@@ -11,7 +11,7 @@ go:
 
 ### Go multi-api
 
-``` yaml $(go) && $(multiapi)
+``` yaml $(go) && !$(track2) && $(multiapi)
 batch:
   - tag: package-2020-12
   - tag: package-2020-10
@@ -47,3 +47,14 @@ Please also specify `--go-sdks-folder=digitaltwins`.
 namespace: digitaltwins
 output-folder: $(go-sdk-folder)/services/preview/$(namespace)/mgmt/2020-03-01-preview/$(namespace)
 ```
+
+```yaml $(go) && $(track2)
+license-header: MICROSOFT_MIT_NO_VERSION
+module-name: sdk/digitaltwins/armdigitaltwins
+module: github.com/Azure/azure-sdk-for-go/$(module-name)
+output-folder: $(go-sdk-folder)/$(module-name)
+azure-arm: true
+modelerfour:
+  lenient-model-deduplication: true
+```
+

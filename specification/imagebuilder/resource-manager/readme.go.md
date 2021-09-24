@@ -2,7 +2,7 @@
 
 These settings apply only when `--go` is specified on the command line.
 
-``` yaml $(go)
+``` yaml $(go) && !$(track2)
   license-header: MICROSOFT_MIT_NO_VERSION
   namespace: virtualmachineimagebuilder
   clear-output-folder: true
@@ -10,7 +10,7 @@ These settings apply only when `--go` is specified on the command line.
 
 ### Go multi-api
 
-``` yaml $(go) && $(multiapi)
+``` yaml $(go) && !$(track2) && $(multiapi)
 batch:
   - tag: package-2020-02
   - tag: package-2018-02
@@ -53,3 +53,11 @@ Please also specify `--go-sdk-folder=<path to the root directory of your azure-s
 ``` yaml $(tag) == 'package-preview-2019-05' && $(go)
 output-folder: $(go-sdk-folder)/services/preview/$(namespace)/mgmt/2019-05-01-preview/$(namespace)
 ```
+```yaml $(go) && $(track2)
+license-header: MICROSOFT_MIT_NO_VERSION
+module-name: sdk/virtualmachineimagebuilder/armvirtualmachineimagebuilder
+module: github.com/Azure/azure-sdk-for-go/$(module-name)
+output-folder: $(go-sdk-folder)/$(module-name)
+azure-arm: true
+```
+
