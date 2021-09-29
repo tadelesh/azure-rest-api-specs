@@ -26,7 +26,7 @@ output-folder: $(go-sdk-folder)/services/$(namespace)/mgmt/2019-04-01/$(namespac
 
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/vmwarecloudsimple/armvmwarecloudsimple
+module-name: sdk/resourcemanager/vmwarecloudsimple/armvmwarecloudsimple
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

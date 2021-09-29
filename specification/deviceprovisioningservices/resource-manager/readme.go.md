@@ -48,7 +48,7 @@ output-folder: $(go-sdk-folder)/services/preview/provisioningservices/mgmt/2017-
 
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/provisioningservices/armprovisioningservices
+module-name: sdk/resourcemanager/provisioningservices/armprovisioningservices
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

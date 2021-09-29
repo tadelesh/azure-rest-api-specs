@@ -37,7 +37,7 @@ output-folder: $(go-sdk-folder)/services/$(namespace)/mgmt/2015-01-01/$(namespac
 
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/resourcehealth/armresourcehealth
+module-name: sdk/resourcemanager/resourcehealth/armresourcehealth
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

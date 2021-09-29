@@ -57,7 +57,7 @@ output-folder: $(go-sdk-folder)/services/$(namespace)/mgmt/2015-02-28/$(namespac
 
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/search/armsearch
+module-name: sdk/resourcemanager/search/armsearch
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

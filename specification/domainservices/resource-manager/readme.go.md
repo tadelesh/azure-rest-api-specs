@@ -56,7 +56,7 @@ output-folder: $(go-sdk-folder)/services/domainservices/mgmt/2017-06-01/$(namesp
 ```
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/domainservices/armdomainservices
+module-name: sdk/resourcemanager/domainservices/armdomainservices
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

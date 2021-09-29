@@ -137,7 +137,7 @@ output-folder: $(go-sdk-folder)/services/preview/$(namespace)/mgmt/2018-03-01-pr
 
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/machinelearningservices/armmachinelearningservices
+module-name: sdk/resourcemanager/machinelearningservices/armmachinelearningservices
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

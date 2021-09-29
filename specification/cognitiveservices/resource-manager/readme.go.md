@@ -47,7 +47,7 @@ output-folder: $(go-sdk-folder)/services/preview/$(namespace)/mgmt/2016-02-01-pr
 
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/cognitiveservices/armcognitiveservices
+module-name: sdk/resourcemanager/cognitiveservices/armcognitiveservices
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

@@ -46,7 +46,7 @@ output-folder: $(go-sdk-folder)/services/preview/$(namespace)/mgmt/2018-06-01-pr
 ```
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/maintenance/armmaintenance
+module-name: sdk/resourcemanager/maintenance/armmaintenance
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

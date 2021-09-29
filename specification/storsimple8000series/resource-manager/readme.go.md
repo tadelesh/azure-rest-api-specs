@@ -27,7 +27,7 @@ output-folder: $(go-sdk-folder)/services/storsimple8000series/mgmt/2017-06-01/$(
 
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/storsimple8000series/armstorsimple8000series
+module-name: sdk/resourcemanager/storsimple8000series/armstorsimple8000series
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

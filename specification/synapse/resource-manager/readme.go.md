@@ -66,7 +66,7 @@ output-folder: $(go-sdk-folder)/services/preview/$(namespace)/mgmt/2021-06-01-pr
 ```
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/synapse/armsynapse
+module-name: sdk/resourcemanager/synapse/armsynapse
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

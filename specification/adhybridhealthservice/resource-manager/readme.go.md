@@ -27,7 +27,7 @@ output-folder: $(go-sdk-folder)/services/adhybridhealthservice/mgmt/2014-01-01/a
 
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/adhybridhealthservice/armadhybridhealthservice
+module-name: sdk/resourcemanager/adhybridhealthservice/armadhybridhealthservice
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

@@ -37,7 +37,7 @@ output-folder: $(go-sdk-folder)/services/hybriddatamanager/mgmt/2016-06-01/$(nam
 
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/hybriddatamanager/armhybriddatamanager
+module-name: sdk/resourcemanager/hybriddatamanager/armhybriddatamanager
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

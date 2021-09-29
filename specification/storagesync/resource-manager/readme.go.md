@@ -97,7 +97,7 @@ output-folder: $(go-sdk-folder)/services/$(namespace)/mgmt/2018-04-02/$(namespac
 
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/storagesync/armstoragesync
+module-name: sdk/resourcemanager/storagesync/armstoragesync
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

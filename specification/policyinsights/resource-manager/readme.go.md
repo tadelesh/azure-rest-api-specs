@@ -68,7 +68,7 @@ output-folder: $(go-sdk-folder)/services/$(namespace)/mgmt/2018-04-04/$(namespac
 
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/policyinsights/armpolicyinsights
+module-name: sdk/resourcemanager/policyinsights/armpolicyinsights
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

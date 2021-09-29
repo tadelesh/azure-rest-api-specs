@@ -55,7 +55,7 @@ output-folder: $(go-sdk-folder)/services/preview/$(namespace)/mgmt/2019-05-01-pr
 ```
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/virtualmachineimagebuilder/armvirtualmachineimagebuilder
+module-name: sdk/resourcemanager/virtualmachineimagebuilder/armvirtualmachineimagebuilder
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

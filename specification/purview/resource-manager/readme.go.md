@@ -37,7 +37,7 @@ output-folder: $(go-sdk-folder)/services/purview/mgmt/2021-07-01/$(namespace)
 
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/purview/armpurview
+module-name: sdk/resourcemanager/purview/armpurview
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

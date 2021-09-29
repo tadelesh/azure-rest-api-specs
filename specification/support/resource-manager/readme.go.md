@@ -37,7 +37,7 @@ output-folder: $(go-sdk-folder)/services/preview/support/mgmt/2019-05-01-preview
 
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/support/armsupport
+module-name: sdk/resourcemanager/support/armsupport
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

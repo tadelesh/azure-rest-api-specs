@@ -37,7 +37,7 @@ output-folder: $(go-sdk-folder)/services/preview/$(namespace)/mgmt/2018-02-01/$(
 
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/windowsiot/armwindowsiot
+module-name: sdk/resourcemanager/windowsiot/armwindowsiot
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

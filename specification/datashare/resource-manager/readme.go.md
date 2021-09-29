@@ -54,7 +54,7 @@ output-folder: $(go-sdk-folder)/services/preview/datashare/mgmt/2020-10-01-previ
 ```
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/datashare/armdatashare
+module-name: sdk/resourcemanager/datashare/armdatashare
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

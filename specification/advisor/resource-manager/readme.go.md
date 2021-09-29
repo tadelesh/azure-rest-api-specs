@@ -56,7 +56,7 @@ output-folder: $(go-sdk-folder)/services/preview/$(namespace)/mgmt/2016-07-12-pr
 ```
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/advisor/armadvisor
+module-name: sdk/resourcemanager/advisor/armadvisor
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

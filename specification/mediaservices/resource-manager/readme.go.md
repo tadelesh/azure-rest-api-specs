@@ -97,7 +97,7 @@ output-folder: $(go-sdk-folder)/services/preview/mediaservices/mgmt/2019-05-01-p
 
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/mediaservices/armmediaservices
+module-name: sdk/resourcemanager/mediaservices/armmediaservices
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true

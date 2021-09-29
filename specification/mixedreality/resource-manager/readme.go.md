@@ -57,7 +57,7 @@ output-folder: $(go-sdk-folder)/services/preview/$(namespace)/mgmt/2019-02-28/$(
 
 ```yaml $(go) && $(track2)
 license-header: MICROSOFT_MIT_NO_VERSION
-module-name: sdk/mixedreality/armmixedreality
+module-name: sdk/resourcemanager/mixedreality/armmixedreality
 module: github.com/Azure/azure-sdk-for-go/$(module-name)
 output-folder: $(go-sdk-folder)/$(module-name)
 azure-arm: true
