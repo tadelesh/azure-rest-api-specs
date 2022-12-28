@@ -82,3 +82,14 @@ Please also specify `--go-sdk-folder=<path to the root directory of your azure-s
 ``` yaml $(tag) == 'package-2015-06' && $(go)
 output-folder: $(go-sdk-folder)/services/$(namespace)/mgmt/2015-06-01/$(namespace)
 ```
+
+``` yaml $(go) && $(track2) && $(package-2020-09-01-hybrid)
+license-header: MICROSOFT_MIT_NO_VERSION
+module-name: sdk/profiles/resourcemanager/keyvault/armkeyvault
+module: github.com/Azure/azure-sdk-for-go/$(module-name)
+output-folder: $(go-sdk-folder)/$(module-name)
+azure-arm: true
+modelerfour:
+  lenient-model-deduplication: true
+tag: profile-hybrid-2020-09-01
+```

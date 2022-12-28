@@ -206,3 +206,15 @@ Please also specify `--go-sdk-folder=<path to the root directory of your azure-s
 namespace: monitorlegacy
 output-folder: $(go-sdk-folder)/services/preview/monitor/mgmt/2016-03-01-preview/$(namespace)
 ```
+
+
+``` yaml $(go) && $(track2) && $(package-2020-09-01-hybrid)
+license-header: MICROSOFT_MIT_NO_VERSION
+module-name: sdk/profiles/resourcemanager/monitor/armmonitor
+module: github.com/Azure/azure-sdk-for-go/$(module-name)
+output-folder: $(go-sdk-folder)/$(module-name)
+azure-arm: true
+modelerfour:
+  lenient-model-deduplication: true
+tag: profile-hybrid-2020-09-01
+```

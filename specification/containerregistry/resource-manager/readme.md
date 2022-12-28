@@ -57,6 +57,15 @@ input-file:
   - Microsoft.ContainerRegistry/preview/2022-02-01-preview/containerregistry.json
 ```
 
+### Tag: profile-hybrid-2020-09-01
+
+These settings apply only when `--tag=profile-hybrid-2020-09-01` is specified on the command line.
+
+```yaml $(tag) == 'profile-hybrid-2020-09-01'
+input-file:
+  - Microsoft.ContainerRegistry/stable/2019-05-01/containerregistry.json
+```
+
 ### Tag: package-2022-02-preview
 
 These settings apply only when `--tag=package-2022-02-preview` is specified on the command line.
